@@ -1,0 +1,82 @@
+%****************************************************
+%Choose your desired class
+%
+\documentclass[11pt, a4paper, two-sided,]{scrreport}
+%\documentclass[11pt, a4paper, two-sided,]{scrbook}
+%\documentclass[a4paper]{letter}
+%\documentclass[a4paper]{article}
+%
+%****************************************************
+
+\usepackage{lipsum} 
+
+\usepackage[swedish,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+%\setlength{\headsep}{5cm}
+%\setlength{\oddsidemargin}{5mm}
+
+\newcommand{\Framsida}{\AddToShipoutPicture*{\put(0,0){\includegraphics{kandidatfram.pdf}}}}
+
+\newcommand{\Baksida}{\AddToShipoutPicture*{\put(0,0){\includegraphics{kandidatbak.pdf}}}}
+
+
+
+\begin{document}
+
+\Framsida %Kommentera för att bli av med loggan
+\vspace*{4cm}
+\Huge{Fin titel}\\\\ %Fyll i titel
+\Large{Augusta Ada King-Noel, Countess of Lovelace} %Fyll i författare
+
+\vspace*{12cm}
+\Large{Handledare: } \\ 
+\Large{Examinator: } \\ 
+\Large{Inlämningsdatum:}\\
+
+
+\begin{center}
+	\textbf{Abstract}
+\end{center}
+\textit{[Place here your english abstract]}
+\lipsum[1]
+
+\bigskip
+\begin{center}
+	\textbf{Sammanfattning}
+\end{center}
+\textit{[Placera ditt svenska abstrakt här ]}
+\lipsum[1]
+
+\newpage
+
+
+
+\newpage
+\textit{[HERE the content of your thesis]}
+
+
+\newpage
+\Baksida %Kommentera för att bli av med loggan
+\vspace*{13cm}
+%Kandidatuppsats 2010:11\\ %Fyll i löpnummer
+Datalogi\\
+%September 2010\\\\ % Fyll i månad och år
+www.math.su.se\\\\
+Beräkningsmatematik\\
+Matematiska institutionen\\
+Stockholms universitet\\
+106 91 Stockholm\\
+
+
+
+
+
+\end{document}
