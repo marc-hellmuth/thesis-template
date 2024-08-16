@@ -22,7 +22,7 @@
 %\setlength{\headsep}{5cm}
 %\setlength{\oddsidemargin}{5mm}
 
-\newcommand{\thesistitle}[2]{\textsf{\Huge #1}\\\textsf{#2}}
+\newcommand{\thesistitle}[2]{\textsf{\Huge #1}\par\vspace{5mm}\textsf{#2}\par\vspace{10mm}}
 \newcommand{\thesisauthor}[1]{\textsf{\Large #1}}
 \newcommand{\supervisor}[1]{\textsf{\Large Handledare: #1}}
 \newcommand{\examiner}[1]{\textsf{\Large Examinator: #1}}
@@ -36,7 +36,7 @@
 
 \Framsida %Kommentera för att bli av med loggan
 \vspace*{4cm}
-\thesistitle{Fin titel}{Nice title}\\\\ %Fyll i titel. Använd först uppsatsen språk och sen det "andra" språket (oftast svenska)
+\thesistitle{Fin titel}{Nice title} %Fyll i titel. Använd först uppsatsens språk och sen det "andra" språket (oftast svenska)
 \thesisauthor{Augusta Ada King-Noel, Countess of Lovelace} %Fyll i författare
 
 % \vspace*{11cm}
@@ -71,6 +71,7 @@
 \lipsum[1-3]
 
 
+
 \newpage
 \Baksida %Kommentera för att bli av med loggan
 \vspace*{13cm}
@@ -88,3 +89,8 @@ Stockholms universitet\\
 
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
