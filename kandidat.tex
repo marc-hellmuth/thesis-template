@@ -17,7 +17,7 @@
 \usepackage{graphicx}
 
 \setlength{\parindent}{0pt}
-\pagestyle{empty}
+\pagestyle{empty}               % No page number on title page and abstract page
 
 %\setlength{\headsep}{5cm}
 %\setlength{\oddsidemargin}{5mm}
@@ -63,14 +63,54 @@
 
 \newpage
 
+% HERE the content of your thesis incl.\ table of contents, main body, bibliography etc
+\tableofcontents{}              % Remove or comment out if you don't want a table of contents
 
 
-\newpage
-\textit{[HERE the content of your thesis incl.\ table of contents, main body, bibliography etc]}
+\pagestyle{plain}               % We want pagenumbering from here
+
+\chapter{Introduction}
+\label{cha:introduction}
+
+Give a general background to the project.
+
+\section{Some section}
+\label{sec:some-section}
+
+You might want to structure the intro somewhat.
+
+
+
 
 \lipsum[1-3]
 
+\chapter{Methods}
+\label{cha:methods}
 
+\lipsum[4-5]
+
+
+%
+% Possibly an appendix? Often not needed, but sometimes useful. This is marked with a special section.
+% Simply remove if you don't see a use for this.
+% 
+\appendix
+
+\chapter{Extra stuff}
+\label{cha:extra-stuff}
+
+\section{Perhaps extra figures}
+\label{sec:perh-extra-figur}
+
+
+\lipsum[6]
+
+\section{Perhaps extra tables}
+\label{sec:perhaps-extra-tables}
+
+
+
+\lipsum[7]
 
 \newpage
 \Baksida %Kommentera för att bli av med loggan
