@@ -70,10 +70,35 @@
 
 \pagestyle{plain}               % We want pagenumbering from here
 
+\section*{Some LaTeX advice}
+\label{sec:some-latex-advice}
+
+\begin{itemize}
+\item Use the \emph{enumerate} or \emph{itemize} environments when you want lists of some kind. The
+  package \emph{enumitem} can be used to give you more control over spacing and details of these
+  lists.
+\item It is considered better style to write ``like this'' than "like that" in LaTeX. This does not
+  seem to be well-supported in Overleaf, unfortunately.
+\end{itemize}
+
+\section*{Advice on figures}
+\label{sec:advice-figures}
+
+\begin{itemize}
+\item Put figures in a \emph{figure} environment and make sure to have a label (like ``fig:accuracy'') to refer to. 
+\item Avoid referring to figures with ``see below'' or similar. Use \verb+see Figure~\ref{fig:accuracy}+ and similar instead. The tilde is a hard space that avoids line breaks.
+\item Make sure you have the rights to add figures that you do not make yourself. You thesis is
+  public, so published, and falls under copyright laws. It is easy to find figures/pictures that you
+  may use, but you need to mention the author/source.
+\end{itemize}
+
+
+
 \chapter{Introduction}
 \label{cha:introduction}
 
 Give a general background to the project.
+
 
 \section{Some section}
 \label{sec:some-section}
