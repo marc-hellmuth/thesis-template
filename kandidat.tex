@@ -1,8 +1,8 @@
 %****************************************************
 %Choose your desired class
 %
-\documentclass[10pt, a4paper, two-sided,]{scrreport}
-%\documentclass[11pt, a4paper, two-sided,]{scrbook}
+%\documentclass[10pt, a4paper, two-sided,]{scrreport}
+\documentclass[10pt, a4paper, two-sided,]{scrbook}
 %\documentclass[a4paper]{letter}
 %\documentclass[a4paper]{article}
 %
@@ -29,7 +29,7 @@
 \newcommand{\examiner}[1]{\textsf{\Large Examinator: #1}}
 \newcommand{\submissiondate}[1]{\textsf{\Large Inlämningsdatum: #1}}
 \newcommand{\Framsida}{\AddToShipoutPicture*{\put(0,0){\includegraphics{kandidatfram.pdf}}}}
-\newcommand{\Baksida}{\AddToShipoutPicture*{\put(0,0){\includegraphics{kandidatbak.pdf}}}}
+\newcommand{\Baksida}{\backmatter\pagestyle{empty}\AddToShipoutPicture*{\put(0,0){\includegraphics{kandidatbak.pdf}}}}
 
 
 
@@ -52,7 +52,7 @@
 \begin{center}
 	\textbf{Abstract}
 \end{center}
-\textit{[Place here your english abstract]}
+\textit{[Place your English abstract here]}
 \lipsum[1]
 
 \bigskip
@@ -87,6 +87,7 @@
 \begin{itemize}
 \item Put figures in a \emph{figure} environment and make sure to have a label (like ``fig:accuracy'') to refer to. 
 \item Avoid referring to figures with ``see below'' or similar. Use \verb+see Figure~\ref{fig:accuracy}+ and similar instead. The tilde is a hard space that avoids line breaks.
+\item Do not ``hard code'' numbers for figures, tables, et.c. At one point or another you will forget to update the numbers. LaTeX gives you great support for automatic numbering with \verb|\label{somelabel}| and \verb|\ref{somelabel}|.
 \item Make sure you have the rights to add figures that you do not make yourself. You thesis is
   public, so published, and falls under copyright laws. It is easy to find figures/pictures that you
   may use, but you need to mention the author/source.
@@ -138,7 +139,6 @@ You might want to structure the intro somewhat.
 
 \lipsum[7]
 
-\newpage
 \Baksida %Kommentera för att bli av med loggan
 \vspace*{13cm}
 %Kandidatuppsats 2010:11\\ %Fyll i löpnummer
